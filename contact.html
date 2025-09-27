@@ -8,6 +8,11 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        🌙
+    </button>
+
     <header>
         <nav class="navbar">
             <div class="nav-brand">
@@ -72,6 +77,18 @@
                 </div>
             </div>
         </section>
+
+        <!-- QR Code Section -->
+        <section class="qr-section">
+            <div class="container">
+                <h3>Scan mich!</h3>
+                <div class="qr-container">
+                    <img src="images/oberstufesite.jpg" class="qr-code qr-code-light" alt="QR Code Oberstufe.site">
+                    <img src="images/oberstufesite.jpg" class="qr-code qr-code-dark" alt="QR Code Oberstufe.site">
+                </div>
+                <p>Scan den QR-Code für mobilen Zugriff</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -82,6 +99,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/scroll-effect.js"></script>
+    <script src="js/main.js"></script>
     <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
