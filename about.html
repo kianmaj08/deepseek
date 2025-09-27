@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Oberstufe.site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Oberstufe.site</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Startseite</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Über uns</h1>
+                <p>Erfahren Sie mehr über unsere Mission und Werte</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-text">
+                    <h2>Unsere Mission</h2>
+                    <p>Oberstufe.site wurde gegründet, um Schülerinnen und Schüler der Oberstufe optimal auf ihre Abschlüsse vorzubereiten. Wir bieten umfassende Lernmaterialien, Tipps und Unterstützung für einen erfolgreichen Schulabschluss.</p>
+                    
+                    <h2>Unser Team</h2>
+                    <p>Unser Team besteht aus erfahrenen Pädagogen und Fachleuten, die sich der Bildung junger Menschen verschrieben haben. Wir arbeiten kontinuierlich daran, unsere Angebote zu verbessern und an die Bedürfnisse der Schüler anzupassen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Oberstufe.site. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scroll-effect.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
